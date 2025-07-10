@@ -6,11 +6,16 @@ authors = [
     {name = "WIT Unimelb Team"}
 ]
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.11,<4.0"
 dependencies = [
     "discord-py>=2.5.2",
     "python-dotenv>=1.0.1",
     "requests>=2.32.4",
+    "llmgine @ git+https://github.com/nathan-luo/llmgine.git",
+    "openai>=1.0.0",
+    "anthropic>=0.50.0",
+    "rich>=13.9.4",
+    "pydantic>=2.11.3",
 ]
 
 [build-system]
@@ -19,6 +24,9 @@ build-backend = "hatchling.build"
 
 [tool.hatch.build.targets.wheel]
 packages = ["src/chico", "src/dashboard", "src/database"]
+
+[tool.hatch.metadata]
+allow-direct-references = true
 
 [tool.uv]
 dev-dependencies = []
