@@ -1,0 +1,26 @@
+# What are dependencies?
+
+- Dependencies are external libraries or packages that your project needs to function.
+
+Examples of Dependencies
+Looking at your project structure, you might need dependencies like:
+Data Processing:
+pandas - for data analysis and manipulation
+numpy - for numerical computing
+
+Web/API:
+requests - for making HTTP requests to APIs
+fastapi or flask - for building web applications
+
+Database:
+sqlalchemy - for database operations
+psycopg2 - for PostgreSQL connections
+Machine Learning:
+scikit-learn - for ML algorithms
+matplotlib - for plotting data
+
+
+What's the purpsoe of uv.lock file?
+
+The lock file is essentially a "snapshot" of your dependency tree that ensures 
+consistent, reproducible builds across all environments! 🔒
