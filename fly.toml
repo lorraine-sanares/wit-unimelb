@@ -1,0 +1,20 @@
+app = "wit-discord-bot"
+primary_region = "syd"
+
+[build]
+
+[env]
+  DATABASE_URL = "sqlite+aiosqlite:///:memory:"
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 1
+  memory_mb = 256
+
+[processes]
+  bot = "uv run python src/chico/programs/llmgine_discord_bot.py"
+
+[[services]]
+  processes = ["bot"]
+  protocol = ""
+  internal_port = 8080 

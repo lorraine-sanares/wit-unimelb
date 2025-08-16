@@ -1,0 +1,49 @@
+# Git
+.git
+.gitignore
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.venv/
+venv/
+env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# Documentation
+README.md
+CONTRIBUTING.md
+docs/
+
+# Tests
+tests/
+
+# Notebooks
+notebooks/
+
+# Database files
+*.db
+*.sqlite
+
+# Logs
+*.log
+
+# Temporary files
+*.tmp
+*.temp 
